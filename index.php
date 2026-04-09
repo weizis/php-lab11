@@ -36,8 +36,16 @@ unlink("world.txt");
 echo "Файл world.txt удален<br>";
 
 // 8 задание
-echo "world.txt: не существует<br>";
-echo "mir.txt: существует<br>";
+if (file_exists("world.txt") == true) {
+    echo "world.txt: существует<br>";
+} else {
+    echo "world.txt: не существует<br>";
+}
+if (file_exists("folder/mir.txt") == true) {
+    echo "folder/mir.txt: существует<br>";
+} else {
+    echo "folder/mir.txt: не существует<br>";
+}
 
 // 9 задание
 mkdir("test");
